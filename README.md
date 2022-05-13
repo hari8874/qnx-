@@ -6,6 +6,10 @@
 
 When the power is first turned on your system, the PLL, IPL, and startup program run and bring up your base system. The base system is primarily the kernel or core operating system. From there, a boot script runs to load device drivers, run services, and start applications. Then finally the main system boots, which allows the main applications of your system to boot, such as the HMI (human machine interface). The previous diagram shows this generic boot sequence:
 
+
+
+
+
 The boot stages are as follows as part of the Kernel:
 PLL (phase locked loop)—PLL refers to how long it takes for the first instruction to begin executing after power is applied to the processor. Most CPUs have a PLL that divides the main crystal frequency into all the timers used by the chip. The time that the PLL takes to settle to the desired frequencies often represents the largest portion of the chip's startup time. The PLL stage is independent of any OS and varies from CPU to CPU; in some cases, it takes as long as 32 milliseconds. Consult the hardware platform's user manual for the exact timing.
 
