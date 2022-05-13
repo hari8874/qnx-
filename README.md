@@ -6,6 +6,7 @@
 
 When the power is first turned on your system, the PLL, IPL, and startup program run and bring up your base system. The base system is primarily the kernel or core operating system. From there, a boot script runs to load device drivers, run services, and start applications. Then finally the main system boots, which allows the main applications of your system to boot, such as the HMI (human machine interface). The previous diagram shows this generic boot sequence:
 
+![bootup_timeline_slm](https://user-images.githubusercontent.com/89625213/168220173-a82cf210-f34a-44ca-817a-61dd853ccd26.png)
 
 
 
